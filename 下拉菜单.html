@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>下拉菜单</title>
+		<style>
+		/*下拉菜单类型一的样式*/
+			.dropdown-one
+			{
+				position:relative;
+				display:inline-block;
+				}
+			span 
+			{
+				font-size:20px;
+			}
+			.dropdown-content-one
+			{
+				position:absolute;
+				display:none;
+				background-color:greenyellow;
+				width:100%;
+				box-shadow:0px 8px 16px 0px white;
+				padding:5px 20px 5px 10px;
+				}
+			.dropdown-one:hover .dropdown-content-one 
+			{
+				display:block;
+				}
+			/*下拉菜单类型二的样式*/
+			.dropdown-two 
+			{
+				position:relative;
+				display:inline-block;
+				}
+			.button 
+			{
+				font-size:20px;
+				background-color:#4CAF50;
+				color:white;
+				padding:16px;
+				border:0px;
+				cursor:pointer;
+			}
+			.dropdown-content-two
+			{
+				position:absolute;
+				display:none;
+				background-color:#f9f9f9;
+				width:100%;	
+				box-shadow:0px 8px 16px rgba(0,0,0,0.2);
+				padding			
+			}
+			.dropdown-two:hover .dropdown-content-two
+			{
+				display:block;
+			}
+			.dropdown-two:hover .button
+			{
+				background-color:#3e8e41;				
+			}
+			.dropdown-two a
+			{
+				padding:10px 16px;
+				display:block;
+				color:black;
+				text-decoration:none;
+			}
+			.dropdown-content-two a:hover
+			{
+				background-color: #f1f1f1;				
+			}
+			/*下拉菜单类型三的样式*/
+			.dropdown-three
+			{
+				position:relative;
+				display:inline-block;
+			}
+			.dropdown-content-three
+			{
+				position:absolute;
+				display:none;
+				background-color:white;
+				width:100%;
+				box-shadow:0px 8px 16px rgba(0,0,0,0.2);
+			}
+			.dropdown-three:hover .dropdown-content-three
+			{
+				display:block;
+			}
+			.dropdown-three img 
+			{
+				background-color:lightskyblue;
+				padding:16px;
+			}
+			.dropdown-content-three img
+			{
+				background-color:gainsboro;
+				padding:5px 16px;
+			}
+		</style>
+	</head>
+	<body>
+		<h2>下拉菜单类型一</h2>
+		<div class="dropdown-one">
+			<span>我的教程</span>
+			<div class="dropdown-content-one">
+				<p>HTML</p>
+				<p>CSS</p>
+				<p>JavaScript</p>
+			</div>
+		</div><br><br><br><br><br><br><br>
+		<hr>
+		<h2>下拉菜单类型二</h2>
+		<div class="dropdown-two">
+			<button class="button">我的教程</button>
+			<div class="dropdown-content-two" style="left:0;">
+				<a href="http://www.runoob.com/html/html-tutorial.html">HTML</a>
+				<a href="http://www.runoob.com/css/css-tutorial.html">CSS</a>
+				<a href="http://www.runoob.com/js/js-tutorial.html">JavaScript</a>
+			</div>
+		</div><br><br><br><br><br><br><br>
+		<hr>
+		<h2>下拉菜单类型三</h2>
+		<div class="dropdown-three">
+			<img src="BAT.jpg" width=300px" height="150px"/>
+			<div class="dropdown-content-three">
+				<a href="https://www.baidu.com/"><img src="BaiDU.png" width="300px" height="100px" /></a>
+				<a href="https://www.1688.com/"><img src="Alibaba.png" width=300px height=100px /></a>
+				<a href="http://www.qq.com/"><img src="Tencent.png" width=300px height=100px /></a>
+			</div>
+		</div><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+		<hr>
+	</body>
+</html>
